@@ -90,7 +90,7 @@ button {
 }
 
 .services {
-  background-color: aqua;
+  background-color: black;
   border: 5px solid red;
 }
 .services__container {
@@ -100,6 +100,9 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+}
+.services__box--stats {
+  background-color: blue;
 }
 
 .form {
