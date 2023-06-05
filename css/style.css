@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0.2em;
+  font-size: 1rem;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.nav {
+  background-color: red;
+}
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__container ul li {
+  padding: 0 4em;
+  color: black;
+}
+.nav__container ul a {
+  color: black;
+}
+.nav__container ul a:hover {
+  background-color: white;
+  color: black;
+  padding: 1em;
+}
+.nav p {
+  font-size: 3rem;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero__red {
+  color: red;
+}
+.hero__right {
+  padding: 2em;
+}
+.hero__form {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__form img {
+  background-color: #fff;
+}
+.hero__form fieldset {
+  padding: 5em;
+}
+
+.services {
+  background-color: aqua;
+  border: 5px solid red;
+}
+.services__container {
+  padding: 2em;
+}
+.services__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.form {
+  background-color: black;
+}
+.form__container div {
+  padding: 0.5em;
+  font-size: 2rem;
+}
+.form__container input {
+  padding: 1em;
+  outline: none;
+}

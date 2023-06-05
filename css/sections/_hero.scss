@@ -1,0 +1,31 @@
+.hero{
+    &__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    &__red{
+        color:red;
+    }
+    &__right{
+        padding: 2em;
+    }
+    &__form{
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            background-color: #fff;
+        }
+        fieldset{
+            padding: 5em;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.form{
+    background-color: black;
+    &__container{
+        div{
+            padding: .5em;
+            font-size:2rem ;
+        }
+        input{
+            padding: 1em;
+            outline: none;
+        }
+    }
+}

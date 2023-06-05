@@ -1,0 +1,14 @@
+.services{
+    background-color:aqua;
+    border: 5px solid red;
+    &__container{
+padding: 2em;
+    }
+        &__box{
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+        
+}
