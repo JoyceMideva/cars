@@ -1,0 +1,33 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+.footer{
+    background-color: aquamarine;
+    &__container{
+        @include flex(space-between,center);
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+// Tablet
+
+@media screen and (max-width:1200px){
+    .footer{
+        &__section{
+            width: 48%;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width:600px){
+    .footer{
+        &__section{
+            width: 100%;
+        }
+    }
+}

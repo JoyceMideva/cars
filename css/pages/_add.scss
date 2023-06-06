@@ -1,6 +1,14 @@
-.form{
-    background-color: black;
+ @use"../utilities/variables"as *;
+ .form{
+    h2{
+        color: red;
+        border-bottom: 2px solid grey;
+    }
+    // background-color: black;
     &__container{
+        padding: 2em;
+        margin-top: 5em;
+        background-color:$light-gray;
         div{
             padding: .5em;
             font-size:2rem ;
@@ -9,5 +17,6 @@
             padding: 1em;
             outline: none;
         }
+        border-radius: 5px;
     }
 }

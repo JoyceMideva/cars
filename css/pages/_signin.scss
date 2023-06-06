@@ -1,0 +1,22 @@
+.signin{
+    &__container{
+        padding: 2em;
+        margin-top: 5em;
+        text-align: center;
+        div{
+            padding: .5em;
+        }
+        input{
+            padding: 1em;
+            outline: none;
+        }
+    }
+    &__box{
+        width: 53%;
+        box-shadow:0 0 5px red;
+        border-radius: 5px;
+        background-color: white;
+        color:black;
+        padding: 2em;
+    }
+}
