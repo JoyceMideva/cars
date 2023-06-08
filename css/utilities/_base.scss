@@ -23,5 +23,22 @@ button{
     border-radius: 5px;
     outline: none;
     align-items: center;
+    
+}
+body{
+    background-color: black;
+    font-family: $font;
 }
 
+// For JS
+.error{
+    border: 1px solid $red;
+}
+
+.error-message{
+    color: $red;
+
+}
+.error-success{
+    color:green;
+}

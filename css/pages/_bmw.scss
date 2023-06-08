@@ -1,0 +1,44 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+.bmw {
+  // background-color:;
+  &__container {
+    @include flex(center, center);
+    gap: 3em;
+    margin: 2em;
+  }
+  p {
+    text-align: center;
+    font-size: 2rem;
+    color: $white;
+  }
+  h3 {
+    text-align: center;
+    color: $white;
+  }
+  &__props {
+    padding-top: 2em;
+    width: fit-content;
+    margin: 0 auto;
+    border: 5px solid $white;
+  }
+  &__properties {
+    border-bottom: 5px solid $white;
+    @include flex(center, center);
+    gap: 2em;
+    line-height: 2;
+  }
+  &__image {
+    @include flex(center, center);
+    gap: 2em;
+    border-bottom: 5px solid $white;
+  }
+  li {
+    text-align: center;
+    color: $white;
+  }
+  &__img {
+    color: $white;
+  }
+}
+

@@ -1,14 +1,22 @@
  @use"../utilities/variables"as *;
  .form{
+
+    form{
+        background: white;
+        width: fit-content;
+        padding: 3em;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
     h2{
         color: red;
         border-bottom: 2px solid grey;
     }
-    // background-color: black;
+    
     &__container{
-        padding: 2em;
+        padding: 5em;
         margin-top: 5em;
-        background-color:$light-gray;
+        // background-color:$white;
         div{
             padding: .5em;
             font-size:2rem ;
@@ -16,6 +24,9 @@
         input{
             padding: 1em;
             outline: none;
+            background-color: aliceblue;
+            border-radius: 5px;
+            width: 100%;
         }
         border-radius: 5px;
     }

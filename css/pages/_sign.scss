@@ -1,5 +1,21 @@
+@use"../utilities/variables"as *;
+@use"../utilities/mixins"as *;
 .sign{
-    background-color: aqua;
+    // background-color: aqua;
+    form{
+        background: white;
+        width: fit-content;
+        padding: 3em;
+        margin: 0 auto;
+        
+    }
+    p{
+        color:$white;
+
+        a{
+            color: $red;
+        }
+    }
     &__container{
         margin-top: 5em;
         text-align: center;

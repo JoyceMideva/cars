@@ -1,0 +1,43 @@
+@use"../utilities/variables"as *;
+@use"../utilities/mixins"as *;
+.wagen{
+    &__container{
+        @include flex(center,center);
+        gap: 3em;
+        margin: 2em;
+    }
+    p{
+        text-align: center;
+        font-size: 2rem;
+        color: $white;
+    }
+
+
+    h3{
+        text-align: center;
+        color: $white;
+    }
+    &__props{
+        border:5px solid $white ;
+    }    
+                &__properties{
+                    border:5px solid $white ;
+                    @include flex(center,center);
+                    gap: 2em;
+                    line-height: 2;
+                }
+                &__image{
+                    @include flex(center,center);
+                    gap:2em;
+                    color: $white;
+                    border:5px solid $white ;
+                }
+                li{
+                    text-align: center;
+                    color: $white;
+                }
+                &_img{
+                    color: $white;
+                }
+            
+}

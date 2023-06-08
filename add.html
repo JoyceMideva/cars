@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,56 +41,123 @@
                     ><img width="20" src="images/home.png " alt="home" /></a
                   >Home
                 </li>
-                <li><a href="#Details">Details</a></li>
-                <li><a href="#">sevices</a></li>
+
+                <li><a href="/sign-up.html" class="sign-up">sign up</a></li>
+                <a href="./add.html">ADD</a>
                 <li>
                   <i class="fa-solid fa-bars"></i>
                 </li>
-                <li><a href="/sign-up.html" class="sign-up">sign up</a></li>
-                <a href="./add.html">ADD</a>
               </ul>
             </div>
           </div>
         </div>
       </section>
-
+    </header>
     <section class="form">
       <div class="container">
         <div class="form__container">
           <form>
-            <h2>complete the  form</h2>
+            <h2>complete the form</h2>
+            <p id="message"></p>
+            <label>Car:</label>
             <div>
-              <label >Names:</label>
-              <input placeholder="firstname" type="text" />
-              <input placeholder="lastname" type="text" />
+              <input
+                class="add-a-house"
+                placeholder="type of Car"
+                type="text"
+              />
             </div>
+            <label>price:</label>
             <div>
-              <label>Car:</label>
-              <input placeholder="type of Car" type="text" />
+              <input
+                class="add-a-house"
+                placeholder=""
+                type="number"
+                min="20000"
+                max="40000"
+              />
             </div>
+            <label>Make:</label>
             <div>
-              <label>Make:</label>
-              <input placeholder="make" type="text" />
+              <input class="add-a-house" placeholder="make" type="text" />
             </div>
+
+            <label>color:</label>
             <div>
-              <label>model:</label>
-              <input placeholder="model" type="text" />
+              <input class="add-a-house" placeholder="color" type="text" />
             </div>
+            <label>Your email:</label>
             <div>
-              <label>Type of color:</label>
-              <input placeholder="color" type="text" />
+              <input
+                class="add-a-house"
+                placeholder="email address"
+                type="email"
+              />
             </div>
+            <label for="">Description</label>
             <div>
-              <label>Your email:</label>
-              <input placeholder="email address" type="email" />
+              <textarea
+                name="description"
+                id=""
+                cols="30"
+                rows="10"
+                class="add-a-house"
+              ></textarea>
             </div>
+            <input class="add-a-house" type="file" />
             <div>
-              <label>Submit:</label>
-              <input value="send" type="submit" />
+              <input value="ADD" type="submit" id="submit-house" />
             </div>
           </form>
         </div>
       </div>
     </section>
+
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__section">
+              <div>
+                <a href="/index.html" class="nav__logo"
+                  ><img
+                    width="50"
+                    src="images/steering-wheel.png"
+                    alt="steering-wheel"
+                  />Jmcars
+                </a>
+              </div>
+              <div class="footer__section--socials">
+                <img width="50" src="images/facebook.jpg" alt="facebook" />
+                <img width="50" src="images/instagram.jpg" alt="instagram" />
+                <img width="50" src="images/twitter.jpg" alt="twitter" />
+              </div>
+            </div>
+            <div class="footer__section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./add.html">Add</a></li>
+                <li><a href="./sign-up.html">sign-up</a></li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <div>
+                <h3>Get In Touch</h3>
+                <ul>
+                  <li><i class="fa-solid fa-phone"></i>+254789810108</li>
+                  <li><i class="fa-solid fa-phone"></i>+254796388487</li>
+                  <li><i class="fa-solid fa-envelope"></i>Jmcars@gmail.com</li>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i>Chuka,Kitengela
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

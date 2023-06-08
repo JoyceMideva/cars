@@ -29,11 +29,24 @@ button {
 }
 
 body {
-  background-color: #000;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.error {
+  border: 1px solid #ff0000;
+}
+
+.error-message {
+  color: #ff0000;
+}
+
+.error-success {
+  color: green;
 }
 
 .nav {
-  background-color: #ff0000;
+  background-color: #ed2b32;
 }
 .nav__container {
   display: flex;
@@ -51,15 +64,34 @@ body {
   padding: 1em;
   font-size: 1rem;
 }
+.nav__container ul li:last-child {
+  display: none;
+}
 .nav__container ul a {
   color: #000;
   padding: 1em;
 }
 .nav__container ul a:hover {
-  background-color: white;
+  background-color: #fff;
   color: #000;
 }
 
+@media screen and (max-width: 1530px) {
+  .nav ul li:not(:last-child) {
+    display: none;
+  }
+  .nav ul li:last-child {
+    display: block;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .nav ul li:not(:last-child) {
+    display: none;
+  }
+  .nav ul li:last-child {
+    display: block;
+  }
+}
 .hero__container {
   display: flex;
   justify-content: space-between;
@@ -126,6 +158,15 @@ body {
 .services__container {
   padding: 2em;
 }
+.services__container button {
+  padding: 1em;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
 .services__box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -139,14 +180,55 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 1600px) {
+  .services__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .services__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+.footer {
+  background-color: white;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1400px) {
+  .footer__section {
+    width: 23%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer__section {
+    width: 100%;
+  }
+}
+.form form {
+  background: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3em;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 .form h2 {
   color: red;
   border-bottom: 2px solid grey;
 }
 .form__container {
-  padding: 2em;
+  padding: 5em;
   margin-top: 5em;
-  background-color: #f4f7fb;
   border-radius: 5px;
 }
 .form__container div {
@@ -156,10 +238,23 @@ body {
 .form__container input {
   padding: 1em;
   outline: none;
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 100%;
 }
 
-.sign {
-  background-color: aqua;
+.sign form {
+  background: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3em;
+  margin: 0 auto;
+}
+.sign p {
+  color: #fff;
+}
+.sign p a {
+  color: #ff0000;
 }
 .sign__container {
   margin-top: 5em;
@@ -175,6 +270,19 @@ body {
   outline: none;
 }
 
+.signin form {
+  background: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3em;
+  margin: 0 auto;
+}
+.signin p {
+  color: #fff;
+}
+.signin p a {
+  color: #ff0000;
+}
 .signin__container {
   padding: 2em;
   margin-top: 5em;
@@ -188,10 +296,146 @@ body {
   outline: none;
 }
 .signin__box {
-  background-color: lightblue;
-  border-radius: 20px;
-  margin-top: 2em;
-  box-shadow: 1px 1px 6px grey;
-  width: 50vw;
-  height: 50vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.bmw__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+  margin: 2em;
+}
+.bmw p {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.bmw h3 {
+  text-align: center;
+  color: #fff;
+}
+.bmw__props {
+  padding-top: 2em;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border: 5px solid #fff;
+}
+.bmw__properties {
+  border-bottom: 5px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  line-height: 2;
+}
+.bmw__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  border-bottom: 5px solid #fff;
+}
+.bmw li {
+  text-align: center;
+  color: #fff;
+}
+.bmw__img {
+  color: #fff;
+}
+
+.wagen__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+  margin: 2em;
+}
+.wagen p {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.wagen h3 {
+  text-align: center;
+  color: #fff;
+}
+.wagen__props {
+  border: 5px solid #fff;
+}
+.wagen__properties {
+  border: 5px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  line-height: 2;
+}
+.wagen__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  color: #fff;
+  border: 5px solid #fff;
+}
+.wagen li {
+  text-align: center;
+  color: #fff;
+}
+.wagen_img {
+  color: #fff;
+}
+
+.benz__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+  margin: 2em;
+}
+.benz p {
+  text-align: center;
+  font-size: 2rem;
+}
+.benz h3 {
+  text-align: center;
+  color: #fff;
+}
+.benz__props {
+  border: 5px solid #fff;
+}
+.benz__properties {
+  border: 5px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+}
+.benz__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  color: #fff;
+  border: 5px solid #fff;
+}
+.benz li {
+  text-align: center;
+  color: #fff;
 }

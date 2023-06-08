@@ -1,7 +1,7 @@
 @use"../utilities/variables"as *;
 @use"../utilities/mixins" as *;
 .nav{
-background-color:$red;
+background-color:#ed2b32;
 &__container{
     @include flex(space-between,center);
     ul{
@@ -9,6 +9,11 @@ background-color:$red;
         li {
             padding: 1em;
             font-size: 1rem;
+            
+
+            &:last-child{
+              display: none;
+            }
           }
             
             a {
@@ -16,10 +21,41 @@ background-color:$red;
               padding: 1em;
       
               &:hover {
-                background-color:white;
+                background-color:$white;
                 color:$black;
               }
             }
           }
     }
+}
+
+// Tablet
+@media screen and (max-width:1530px){
+  .nav{
+      ul{
+          li{
+              &:not(:last-child){
+                  display: none;
+              }
+              &:last-child{
+                  display: block;
+              }
+          }
+      }
+  }
+}
+// mobile
+@media screen and (max-width:1330px){
+  .nav{
+      ul{
+          li{
+              &:not(:last-child){
+                  display: none;
+              }
+              &:last-child{
+                  display: block;
+              }
+          }
+      }
+  }
 }
