@@ -4,6 +4,14 @@
   background-color: white;
   &__container {
     @include flex(space-between, center);
+    flex-wrap: wrap;
+  }
+  &__section{
+    width: 23%;
+    padding: 1em;
+    color:$black;
+    margin-top: 2em;
+    line-height: 2em;
   }
 }
 // Tablet
