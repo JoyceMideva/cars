@@ -41,10 +41,6 @@ body {
   color: #ff0000;
 }
 
-.details-success {
-  color: green;
-}
-
 .nav {
   background-color: #ed2b32;
 }
@@ -144,6 +140,10 @@ body {
 
 @media screen and (max-width: 1450px) {
   .hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   .hero h1 {
@@ -153,7 +153,7 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .hero__container {
     display: flex;
     justify-content: space-between;
@@ -224,6 +224,7 @@ body {
   background-color: white;
 }
 .footer__container {
+  padding: 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -277,6 +278,16 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 1250px) {
+  .form form {
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 558px) {
+  .form form {
+    padding: 1em;
+  }
+}
 .sign form {
   background: white;
   width: -moz-fit-content;
@@ -293,7 +304,6 @@ body {
 .sign__container {
   margin-top: 5em;
   text-align: center;
-  border-radius: 5px;
 }
 .sign__container div {
   padding: 0.5em;
@@ -304,6 +314,16 @@ body {
   outline: none;
 }
 
+@media screen and (max-width: 900px) {
+  .sign form {
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .sign form {
+    padding: 1em;
+  }
+}
 .signin form {
   background: white;
   width: -moz-fit-content;

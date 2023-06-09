@@ -60,6 +60,7 @@
 @media screen and (max-width:1450px){
     .hero{
         &__container{
+            @include flex(space-between,center);
             flex-wrap: wrap;
         }
         h1{
@@ -74,7 +75,7 @@ font-size: 1rem;
 
 
 // mobile
-@media screen and (max-width:900px){
+@media screen and (max-width:1000px){
     .hero{
         &__container{
             @include flex(space-between,center);

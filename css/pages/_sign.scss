@@ -27,7 +27,24 @@
             padding: 1em;
             outline: none;
         }
-        border-radius: 5px;
-        // border: 5px solid salmon;
+        // border-radius: 5px;
+        
     }
 }
+// MEDIA  quaries
+// mobile
+@media screen and (max-width:900px){
+.sign{
+    form{
+        padding:1em;
+    }
+}
+}
+// tablet
+@media screen and (max-width:1400px){
+    .sign{
+        form{
+            padding:1em;
+        }
+    }
+    }

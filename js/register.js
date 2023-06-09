@@ -18,9 +18,14 @@ alert("enter your email")
     user.map(item=>{
         if(userData.email === item.email && userData.password){
             alert("you have successfully signed in")
-            window.location("index.html")
+            
         }else{
+
+    let userDetail=[]
+    userDetail.push(userData)
+    localStorage.setItem("user", JSON.stringify(userDetail))
             alert("invalid data")
+            window.location("index.html")
         }
     })
 }

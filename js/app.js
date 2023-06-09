@@ -1,61 +1,41 @@
-const addHouse = document.querySelectorAll(".add-a-house");
-const submitHouse = document.getElementById("submit-house");
-const message = document.getElementById("message");
-const details=document.getElementById("details")
 
-submitHouse.addEventListener("click", (e) => {
-  e.preventDefault();
-const newCar={};
-const cars=[];
-  addHouse.forEach((element) => {
-    if (element.value === "") {
-      element.classList.add("error");
-      message.textContent="please fill all empty fields";
-      message.classList.add("error-message")
-      details.textContent="added successfully";
-      message.classList.add("details-success");
-   
-      return;
-    } else {
-      element.classList.remove("error");
-      message.classList.remove("details-success");
-      message.textContent=""
-      newCar.carName=addHouse[0].value;
-      newCar.carPrice=addHouse[1].value;
-      newCar.carMake=addHouse[2].value;
-      newCar.carColor=addHouse[3].value;
-      newCar.carEmail=addHouse[4].value;
-      newCar.carDescription=addHouse[5].value;
-      newCar.carImage=addHouse[6].files[0].name;
-
-
-      
-      console.log(newCar)
-    }
+const servicecontainer = document.getElementById("servicecontainer");
 
 
 
+function getFromLOcalStorage() {
+  const cars = JSON.parse(localStorage.getItem("cars"));
+  cars.map((cars) => {
+    const carDetail = document.createElement("div");
+    carDetail.setAttribute("class", "service__box");
 
+    const carDetailImg = document.createElement("div");
+    carDetailImg.setAttribute("class", "service__box--stats");
+
+    const carImage = document.createElement("div");
+    const img2 = document.createElement("img");
+    img2.setAttribute("class", "image");
+    img2.setAttribute("src", `images/${cars.carImage}`);
+    carDetailImg.appendChild(carImage);
+
+    const div = document.createElement("div");
+    div.setAttribute("class", "div");
+    const h4 = document.createElement("h4");
+    h4.textContent = cars.carName;
+    const h2 = document.createElement("h4");
+    h2.textContent = cars.carMake;
+    const h5 = document.createElement("h3");
+    h5.textContent = cars.carPrice;
+    carCare.appendChild(h4);
+    carCare.appendChild(h2);
+    carCare.appendChild(h5);
+
+    const button = document.createElement("button");
+    button.textContent = "view more";
+    button.appendChild(button);
+
+    carDetail.appendChild(carImage);
+    carDetail.appendChild(div);
+    servicecontainer.appendChild(carDetail);
   });
-
-//   localstorage
-if (localStorage.getItem("cars")===null) {
-    cars.push(newCar);
-    localStorage.setItem("cars", JSON.stringify(cars));
-
 }
-else{
-    const localStorageCars= JSON.parse(localStorage.getItem("cars"));
-    localStorageCars.push(newCar);
-    localStorage.setItem("cars", JSON.stringify(localStorageCars));
-
-    
-
-}
-
-});
-
-console.log(submitHouse);
-
-
-

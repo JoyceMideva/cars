@@ -3,6 +3,7 @@
 .footer {
   background-color: white;
   &__container {
+   padding: 2em;
     @include flex(space-between, center);
     flex-wrap: wrap;
   }

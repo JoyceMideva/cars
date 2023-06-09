@@ -31,3 +31,21 @@
         border-radius: 5px;
     }
 }
+
+// media quaries
+// tablet
+@media screen and (max-width:1250px){
+    .form{
+        form{
+            padding:1em;
+        }
+    }
+    }
+// mobile
+    @media screen and (max-width:558px){
+        .form{
+            form{
+                padding:1em;
+            }
+        }
+        }
