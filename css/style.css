@@ -41,6 +41,10 @@ body {
   color: #ff0000;
 }
 
+.details-success {
+  color: green;
+}
+
 .nav {
   background-color: #ed2b32;
 }
